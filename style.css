@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff9fc;
+    color: #6b4b5b;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #ffd7ea,
+        #fff,
+        #ffeef6
+    );
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.logo {
+    width: 180px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+
+    color: #d4af37;
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+/* MENU */
+
+nav {
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    position: sticky;
+
+    top: 0;
+}
+
+nav a {
+    color: #d88ab2;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* BANNER */
+
+.banner {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle,
+            white,
+            #ffe4f0
+        );
+}
+
+.banner h2 {
+    color: #d4af37;
+
+    font-size: 40px;
+}
+
+.banner button {
+    background: #d4af37;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+/* PRODUTOS */
+
+#produtos {
+    padding: 60px 10%;
+}
+
+#produtos h2 {
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 30px;
+}
+
+.produto {
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border: 2px solid #ffd5e8;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+}
+
+.foto {
+    background: #ffe8f3;
+
+    height: 180px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+/* FEEDBACKS */
+
+#feedbacks {
+    padding: 60px 10%;
+}
+
+.feedback {
+    background: white;
+
+    border-left: 5px solid #d4af37;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+.novo-feedback {
+    margin-top: 40px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border-radius: 15px;
+
+    border: 1px solid #ffcde3;
+
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    background: #d4af37;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+/* SOBRE */
+
+#sobre {
+    padding: 60px 10%;
+
+    text-align: center;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #ffd7ea;
+
+    text-align: center;
+
+    padding: 30px;
+}
