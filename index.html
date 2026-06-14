@@ -132,24 +132,69 @@
 
             <form id="formFeedback">
 
-                <input
-                    type="text"
-                    id="nome"
-                    placeholder="Seu nome"
-                    required
-                >
+    <h3>Avalie sua compra</h3>
 
-                <textarea
-                    id="mensagem"
-                    placeholder="Como foi sua experiência?"
-                    required
-                ></textarea>
+    <div class="avaliacao">
+        <input type="radio" id="5" name="estrela" value="★★★★★" required>
+        <label for="5">★</label>
 
-                <button type="submit">
-                    Enviar feedback
-                </button>
+        <input type="radio" id="4" name="estrela" value="★★★★">
+        <label for="4">★</label>
 
-            </form>
+        <input type="radio" id="3" name="estrela" value="★★★">
+        <label for="3">★</label>
+
+        <input type="radio" id="2" name="estrela" value="★★">
+        <label for="2">★</label>
+
+        <input type="radio" id="1" name="estrela" value="★">
+        <label for="1">★</label>
+    </div>
+
+    <label>Qual produto você comprou?</label>
+
+    <div class="opcoes-produto">
+
+        <label>
+            <input type="radio" name="produto" value="Álbum" required>
+            Álbum
+        </label>
+
+        <label>
+            <input type="radio" name="produto" value="Photocard">
+            Photocard
+        </label>
+
+        <label>
+            <input type="radio" name="produto" value="Holder">
+            Holder
+        </label>
+
+        <label>
+            <input type="radio" name="produto" value="Mini Binder">
+            Mini Binder
+        </label>
+
+    </div>
+
+    <input
+        type="text"
+        id="nome"
+        placeholder="Seu nome"
+        required
+    >
+
+    <textarea
+        id="mensagem"
+        placeholder="Como foi sua experiência?"
+        required
+    ></textarea>
+
+    <button type="submit">
+        Enviar feedback
+    </button>
+
+</form>
 
         </div>
 

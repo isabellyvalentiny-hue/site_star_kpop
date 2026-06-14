@@ -234,3 +234,33 @@ footer {
 
     padding: 30px;
 }
+.avaliacao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.avaliacao input {
+    display: none;
+}
+
+.avaliacao label {
+    font-size: 35px;
+    color: #d3d3d3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.avaliacao label:hover,
+.avaliacao label:hover ~ label,
+.avaliacao input:checked ~ label {
+    color: #d4af37;
+}
+
+.opcoes-produto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}

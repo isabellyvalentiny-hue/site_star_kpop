@@ -14,17 +14,30 @@ form.addEventListener("submit", function(event){
     const mensagem =
         document.getElementById("mensagem").value;
 
+    const estrelas =
+        document.querySelector(
+            'input[name="estrela"]:checked'
+        ).value;
+
+    const produto =
+        document.querySelector(
+            'input[name="produto"]:checked'
+        ).value;
+
     const feedback =
         document.createElement("div");
 
     feedback.className = "feedback";
 
-    feedback.innerHTML =
-        `
-        <strong>${nome}:</strong>
+    feedback.innerHTML = `
+        <div class="estrelas">
+            ${estrelas}
+        </div>
 
-        <p>${mensagem}</p>
-        `;
+        <strong>${nome}</strong> • ${produto}
+
+        <p>"${mensagem}"</p>
+    `;
 
     lista.prepend(feedback);
 
